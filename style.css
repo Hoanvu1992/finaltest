@@ -1,0 +1,29 @@
+#caro {
+  height: 500px;
+  width: 500px;
+}
+
+td {
+  border: 1px solid black;
+  width: 120px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+tr :hover {
+  background-color: rgb(164, 192, 231);
+}
+
+.x {
+  color: red;
+  font-size: 60px;
+}
+
+.o {
+  color: Black;
+  font-size: 60px;
+}
+
+.win {
+  background-color: rgb(164, 192, 231);
+}
