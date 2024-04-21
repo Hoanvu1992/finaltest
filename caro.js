@@ -7,7 +7,7 @@ const startBtn = document.getElementById("startBtn");
 startBtn.addEventListener("click", startGame);
 
 function startGame() {
-  const gameStatus = document.getElementById("h2_name");
+  const gameStatus = h2_name;
   gameStatus.textContent = "Hãy chiến đấu hết mình!";
   for (let i = 1; i <= 9; i++) {
     document
@@ -27,7 +27,7 @@ function startGame() {
 
 // reset
 document.getElementById("reset").addEventListener("click", function () {
-  const gameStatus = document.getElementById("h2_name");
+  const gameStatus = h2_name;
   gameStatus.textContent = "Hãy chiến đấu hết mình!";
   for (let i = 1; i <= 9; i++) {
     document.getElementById(i.toString()).innerHTML = "";
@@ -36,8 +36,6 @@ document.getElementById("reset").addEventListener("click", function () {
     document.getElementById(i.toString()).classList.remove("win");
     gameEnded = false;
     playerSymbol = "X";
-    // const gameStatus = document.getElementById("h2_name");
-    // gameStatus.textContent = "Hãy chiến đấu hết mình!";
   }
 });
 
@@ -64,7 +62,7 @@ function checkWin() {
       document.getElementById(winPos[i][2]).classList.add("win");
       gameEnded = true;
 
-      const gameStatus = document.getElementById("h2_name");
+      const gameStatus = h2_name;
       gameStatus.textContent =
         "Người chơi " +
         playerSymbol +
